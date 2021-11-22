@@ -5,6 +5,8 @@ import styled from "styled-components";
 import AboutMeSection from "../../sections/about-me-section";
 import me from "./../../assets/images/474157.jpeg";
 import {Element} from "react-scroll";
+import ExperiencesUI from "../../sections/experiences-section";
+import {defaultPadding} from "../../constants";
 
 interface MainUIProps {
 
@@ -20,6 +22,7 @@ const MainWrapper = styled.div`
   
   section {
     min-height: 100vh;
+    padding: 0 ${defaultPadding};
   }
 `;
 
@@ -29,9 +32,7 @@ const MainUI = ({}: MainUIProps) => {
         <HeaderUI />
         <HelloSection name={"hello"}/>
         <AboutMeSection name={"about-me"} />
-        <Element name={"experiences"}>
-            <section></section>
-        </Element>
+        <ExperiencesUI name={"experiences"} />
         <Element name={"study"}>
             <section></section>
         </Element>

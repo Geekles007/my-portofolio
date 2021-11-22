@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import {defaultPadding} from "../../../constants";
 
-export const AboutMeSectionWrapper = styled.div`
+export const AboutMeSectionWrapper = styled.section`
   z-index: 2;
   min-height: 100vh;
-  padding: 0 ${defaultPadding};
   color: ${(props) => (props.theme.textColor)};
   display: flex;
   align-items: center;
