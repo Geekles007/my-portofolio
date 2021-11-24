@@ -4,6 +4,9 @@ import {Element} from "react-scroll";
 import 'react-vertical-timeline-component/style.min.css';
 import {VerticalTimeline} from "react-vertical-timeline-component";
 import ExperienceItem from "./children/experience-item";
+import DribbbleWorks from "./children/dribbble-works";
+import {FaArrowRight, FaChevronRight} from "react-icons/all";
+import {currentTheme} from "../../theme/theme";
 
 const ExperiencesUIWrapper = styled.section`
   color: ${(props) => (props.theme.textColor)};
@@ -18,7 +21,12 @@ const ExperiencesUIWrapper = styled.section`
     z-index: 99;
     color: ${(props) => (props.theme.fourth)};
   }
-  
+
+  h3 {
+    font-size: 1.3em;
+    text-align: left;
+  }
+
   h2 {
     border: 3px solid #fff;
     padding: .5em 1em;
@@ -30,6 +38,30 @@ const ExperiencesUIWrapper = styled.section`
 
   .timeline-wrapper {
     margin-top: 1em;
+  }
+
+  .see-more-button {
+    border: 3px solid ${(props) => (props.theme.fourth)};
+    padding: .5em 1em;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    z-index: 99;
+    
+    ._iconic {
+      transform: translateX(5px);
+      transition: all .5s 0s ease-in-out;
+    }
+    
+    &:hover {
+      ._iconic {
+        transform: translateX(12px);
+      }
+    }
   }
 
 `;
@@ -62,7 +94,10 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                 <h2>As Designer</h2>
                 <p>I'm really passionated by design and everything related to it and here is some of my latest works</p>
 
-                {/*Dribbble api*/}
+                <DribbbleWorks/>
+
+                <a className={"see-more-button"} href="https://dribbble.com/ibirddesign" target="_blank">See
+                    more <FaChevronRight className={"_iconic"} color={currentTheme.fourth}/></a>
             </ExperiencesUIWrapper>
         </Element>
     </>
