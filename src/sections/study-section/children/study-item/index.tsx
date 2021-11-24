@@ -5,7 +5,7 @@ import {currentTheme} from "../../../../theme/theme";
 import {FaUser} from "react-icons/all";
 import {IconType} from "react-icons";
 
-const ExperienceItemWrapper = styled(VerticalTimelineElement)`
+const StudyItemWrapper = styled(VerticalTimelineElement)`
   &.basic {
 
     h3 {
@@ -40,22 +40,22 @@ const ExperienceItemWrapper = styled(VerticalTimelineElement)`
   }
 `;
 
-interface ExperienceItemProps {
+interface StudyItemProps {
     position: string;
     companyName: string;
     myTasks: ReactNode | string;
     period: string;
-    icon?: IconType;
+    icon?: ReactNode;
 }
 
-const ExperienceItem = ({position, companyName, myTasks, period, icon}: ExperienceItemProps) => {
+const StudyItem = ({position, companyName, myTasks, period, icon}: StudyItemProps) => {
 
-    return <ExperienceItemWrapper
+    return <StudyItemWrapper
         className="basic"
         contentStyle={{ background: currentTheme.primary, color: '#fff', borderBottomColor: currentTheme.fourth }}
         contentArrowStyle={{ borderRight: '7px solid ' + currentTheme.primary}}
         date={period}
-        iconStyle={{ background: currentTheme.primary, color: currentTheme.fourth }}
+        iconStyle={{ background: currentTheme.primary, color: currentTheme.fourth, overflow: "hidden" }}
         icon={icon ?? <FaUser/>}
     >
         <h3 className="vertical-timeline-element-title">{position}</h3>
@@ -63,8 +63,8 @@ const ExperienceItem = ({position, companyName, myTasks, period, icon}: Experien
         <div className={"paragraph"}>
             {myTasks}
         </div>
-    </ExperienceItemWrapper>
+    </StudyItemWrapper>
 
 }
 
-export default memo(ExperienceItem);
+export default memo(StudyItem);

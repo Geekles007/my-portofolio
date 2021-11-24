@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import {VerticalTimeline} from "react-vertical-timeline-component";
 import ExperienceItem from "./children/experience-item";
 import DribbbleWorks from "./children/dribbble-works";
-import {FaArrowRight, FaChevronRight} from "react-icons/all";
+import {FaChevronRight} from "react-icons/all";
 import {currentTheme} from "../../theme/theme";
 
 const ExperiencesUIWrapper = styled.section`
@@ -23,8 +23,14 @@ const ExperiencesUIWrapper = styled.section`
   }
 
   h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: left;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    color: ${(props) => (props.theme.fourth)};
   }
 
   h2 {
@@ -75,7 +81,7 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
     return <>
         <Element name={name}>
             <ExperiencesUIWrapper>
-                <h3>Where I worked</h3>
+                <h1>Where I worked</h1>
                 <p>I have worked for a lot of company in my career, and here is some of them.</p>
 
                 <h2>As Developer</h2>

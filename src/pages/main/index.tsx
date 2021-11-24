@@ -7,6 +7,9 @@ import me from "./../../assets/images/474157.jpeg";
 import {Element} from "react-scroll";
 import ExperiencesUI from "../../sections/experiences-section";
 import {defaultPadding} from "../../constants";
+import StudyUI from "../../sections/study-section";
+import FunnyProjects from "../../sections/funny-projects-section";
+import ContactMe from "../../sections/contact-me-section";
 
 interface MainUIProps {
 
@@ -33,18 +36,9 @@ const MainUI = ({}: MainUIProps) => {
         <HelloSection name={"hello"}/>
         <AboutMeSection name={"about-me"} />
         <ExperiencesUI name={"experiences"} />
-        <Element name={"study"}>
-            <section></section>
-        </Element>
-        <Element name={"funny-projects"}>
-            <section></section>
-        </Element>
-        <Element name={"my-stack"}>
-            <section></section>
-        </Element>
-        <Element name={"contact-me"}>
-            <section></section>
-        </Element>
+        <StudyUI name={"study"} />
+        <FunnyProjects name={"funny-projects"} />
+        <ContactMe name={"contact-me"} />
     </MainWrapper>
 
 }

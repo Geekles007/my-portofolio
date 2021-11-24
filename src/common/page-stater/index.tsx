@@ -15,7 +15,6 @@ const PageStater = ({handleTitleChange}: PageStaterProps) => {
             <Link activeClass="activated" to="experiences" spy={true} smooth={true} offset={-10} duration={500} onSetActive={() => handleTitleChange("Experiences")} className={"li"}><span>Experiences</span></Link>
             <Link activeClass="activated" to="study" spy={true} smooth={true} offset={-10} duration={500} onSetActive={() => handleTitleChange("Study")} className={"li"}><span>Study</span></Link>
             <Link activeClass="activated" to="funny-projects" spy={true} smooth={true} offset={-10} duration={500} onSetActive={() => handleTitleChange("Funny projects")} className={"li"}><span>Funny projects</span></Link>
-            <Link activeClass="activated" to="my-stack" spy={true} smooth={true} offset={-10} duration={500} onSetActive={() => handleTitleChange("My stack")} className={"li"}><span>My Stack</span></Link>
             <Link activeClass="activated" to="contact-me" spy={true} smooth={true} offset={-10} duration={500} onSetActive={() => handleTitleChange("Contact me")} className={"li"}><span>Contact me</span></Link>
         </div>
     </PageStaterWrapper>
