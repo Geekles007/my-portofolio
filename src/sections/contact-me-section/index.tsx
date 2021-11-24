@@ -24,7 +24,12 @@ const ContactMeWrapper = styled.div`
       margin: 1em 0;
     }
     
-    a{
+    a {
+      text-decoration: none;
+      color: ${(props) => (props.theme.fourth)};
+    }
+    
+    a.sayHello{
       border: 3px solid ${(props) => (props.theme.fourth)};
       padding: .5em 1em;
       color: #fff;
@@ -72,7 +77,7 @@ const ContactMe = ({name}: ContactMeProps) => {
                 <a href="mailto:tondjilee@gmail.com" className="sayHello">Say Hello</a>
 
                 <div className="copyright">
-                    <span className="_copy-text">Designed & Built with ❤️ by Niat Lee</span>
+                    <span className="_copy-text">Designed & Built with ❤️ by <a href={"https://www.linkedin.com/company/64646551"} target="_blank">Niat Lee</a></span>
                     <span>&copy; Copyright {(new Date()).getFullYear()}</span>
                 </div>
             </section>
