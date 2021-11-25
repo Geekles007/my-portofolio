@@ -2,6 +2,7 @@ import React, {memo} from 'react';
 import styled from "styled-components";
 import {Element} from "react-scroll";
 import ProjectItem from "./children/project-item";
+import {size} from "../../constants";
 
 const FunnyProjectsWrapper = styled.div`
 

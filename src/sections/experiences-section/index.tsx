@@ -7,6 +7,7 @@ import ExperienceItem from "./children/experience-item";
 import DribbbleWorks from "./children/dribbble-works";
 import {FaChevronRight} from "react-icons/all";
 import {currentTheme} from "../../theme/theme";
+import {size} from "../../constants";
 
 const ExperiencesUIWrapper = styled.section`
   color: ${(props) => (props.theme.textColor)};

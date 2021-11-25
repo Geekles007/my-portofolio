@@ -6,7 +6,7 @@ import AboutMeSection from "../../sections/about-me-section";
 import me from "./../../assets/images/474157.jpeg";
 import {Element} from "react-scroll";
 import ExperiencesUI from "../../sections/experiences-section";
-import {defaultPadding} from "../../constants";
+import {defaultPadding, size} from "../../constants";
 import StudyUI from "../../sections/study-section";
 import FunnyProjects from "../../sections/funny-projects-section";
 import ContactMe from "../../sections/contact-me-section";
@@ -27,6 +27,12 @@ const MainWrapper = styled.div`
   section {
     min-height: 100vh;
     padding: 0 ${defaultPadding};
+  }
+
+  @media (max-width: ${size.tabletIpadPro}) {
+    section {
+      padding: 0 1em;
+    }
   }
 `;
 

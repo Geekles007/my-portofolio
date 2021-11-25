@@ -30,11 +30,7 @@ const PageInfoWrapper = styled.div`
   }
 
   @media (max-width: ${size.mobileL}) {
-    width: 30px;
-    
-    h2 {
-      font-size: 2em;
-    }
+    display: none;
   }
 `;
 

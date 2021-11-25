@@ -2,6 +2,7 @@ import {memo} from "react";
 import * as React from "react";
 import styled from "styled-components";
 import WorkItem, {Post} from "../work-item";
+import {size} from "../../../../constants";
 
 interface WorksViewerProps {
     loading: boolean;
@@ -14,6 +15,10 @@ const WorksViewerWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: calc(4 * 8px);
   grid-auto-flow: dense;
+
+  @media (max-width: ${size.tabletIpadPro}) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 `;
 
 const WorksViewer = ({loading, posts = []}: WorksViewerProps) => {

@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import {size} from "../../../../../constants";
 
 export const ProjectItemWrapper = styled.div<{ position: "left" | "right" }>`
   width: 900px;
   position: relative;
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
   z-index: 99;
   margin-bottom: 5em;
@@ -113,6 +114,28 @@ export const ProjectItemWrapper = styled.div<{ position: "left" | "right" }>`
           color: ${(props) => (props.theme.fourth)};
         }
       }
+    }
+  }
+
+  @media (max-width: ${size.laptop}) {
+    width: 650px;
+    margin-bottom: 1.5em;
+    min-height: 300px;
+  }
+
+  @media (max-width: ${size.mobileL}) {
+    width: 100%;
+    flex-direction: column;
+    border-top: 1px solid ${(props) => (props.theme.textColor)};
+    padding-top: 2em;
+    
+    &:first-child {
+      border-top: none;
+    }
+    
+    .preview, .details {
+      position: relative;
+      width: 100%;
     }
   }
 `;

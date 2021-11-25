@@ -1,7 +1,7 @@
 import {memo} from "react";
 import * as React from "react";
 import styled from "styled-components";
-import {dribbble_api, SHOTS_PER_PAGE} from "../../../../constants";
+import {dribbble_api, SHOTS_PER_PAGE, size} from "../../../../constants";
 import axios from "axios";
 import WorksViewer from "../works-viewer";
 
@@ -41,6 +41,10 @@ const DribbbleWorksWrapper = styled.div`
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: ${size.tabletIpadPro}) {
+    padding: 3em 0;
   }
 `;
 

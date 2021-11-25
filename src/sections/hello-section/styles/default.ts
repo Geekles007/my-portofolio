@@ -103,11 +103,11 @@ export const HelloSectionWrapper = styled.div`
   @media (max-width: ${size.laptop}) {
     .info-desc {
       h1 {
-        font-size: 4em;
+        font-size: 3.5em;
       }
 
       strong {
-        font-size: 2.5em;
+        font-size: 2.3em;
       }
 
       p {
@@ -116,9 +116,9 @@ export const HelloSectionWrapper = styled.div`
     }
   }
 
-  @media (max-width: ${size.mobileL}) {
+  @media (max-width: ${size.tabletIpadPro}) {
     .page-stater {
-      padding: 0 1em;
+      display: none;
     }
     
     ._go-down {
@@ -132,6 +132,10 @@ export const HelloSectionWrapper = styled.div`
     }
     
     .info-desc {
+      transform: translate(0, -50%);
+      left: 0;
+      margin-left: 1em;
+      
       h1 {
         font-size: 4em;
       }
@@ -142,7 +146,7 @@ export const HelloSectionWrapper = styled.div`
 
       p {
         font-size: 1.1em;
-        width: 250px;
+        width: 95%;
       }
     }
   }

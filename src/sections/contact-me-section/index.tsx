@@ -1,6 +1,8 @@
 import React, {memo} from 'react';
 import styled from "styled-components";
 import {Element} from "react-scroll";
+import {size} from "../../constants";
+import {FaHeart} from "react-icons/all";
 
 const ContactMeWrapper = styled.div`
 
@@ -60,6 +62,18 @@ const ContactMeWrapper = styled.div`
     }
   }
 
+  @media (max-width: ${size.mobileL}) {
+    section {
+      h1 {
+        font-size: 2.3em;
+      }
+
+      p{
+        width: 90%;
+      }
+    }
+  }
+
 `;
 
 interface ContactMeProps {
@@ -77,7 +91,7 @@ const ContactMe = ({name}: ContactMeProps) => {
                 <a href="mailto:tondjilee@gmail.com" className="sayHello">Say Hello</a>
 
                 <div className="copyright">
-                    <span className="_copy-text">Designed & Built with ❤️ by <a href={"https://www.linkedin.com/company/64646551"} target="_blank">Niat Lee</a></span>
+                    <span className="_copy-text">Designed & Built with <FaHeart color={"red"} /> by <a href={"https://www.linkedin.com/company/64646551"} target="_blank">Niat Lee</a></span>
                     <span>&copy; Copyright {(new Date()).getFullYear()}</span>
                 </div>
             </section>

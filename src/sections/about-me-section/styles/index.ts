@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {size} from "../../../constants";
 
 export const AboutMeSectionWrapper = styled.section`
   z-index: 2;
@@ -69,6 +70,7 @@ export const AboutMeSectionWrapper = styled.section`
   
   .hobbies {
     display: flex;
+    flex-wrap: wrap;
     
     .hob-card {
       display: flex;
@@ -81,11 +83,33 @@ export const AboutMeSectionWrapper = styled.section`
       text-align: center;
       border: 2px solid ${(props) => (props.theme.fourth)};
       margin-right: 1em;
+      margin-bottom: 1em;
       
       strong {
         margin-top: .5em;
         height: 20px;
       }
+    }
+  }
+
+  @media (max-width: ${size.laptop}) {
+    .about {
+      flex-direction: column;
+
+      .skills-and-text, .more-details {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: ${size.tabletIpadPro}) {
+    .hob-card {
+      width: 100px !important;
+      height: 100px !important;
+    }
+
+    .skills-and-text {
+      padding-right: 0 !important;
     }
   }
 `;
