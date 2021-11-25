@@ -25,6 +25,19 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                         <JaugeUI percent={60} title={"Mobile development"}/>
                         <JaugeUI percent={70} title={"Graphic Design"}/>
                     </div>
+                    <h4>My Stack</h4>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Typescript</li>
+                        <li>Micro frontends</li>
+                        <li>GraphQL</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>Affinity Designer</li>
+                        <li>PostgreSQL</li>
+                        <li>Flutter</li>
+                    </ul>
                 </div>
                 <div className="more-details">
                     <h4>Spoken languages</h4>

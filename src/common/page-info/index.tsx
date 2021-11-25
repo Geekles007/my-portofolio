@@ -74,6 +74,7 @@ const PageInfo = ({title}: PageInfoWrapperProps) => {
     const [current, setCurrent] = useState<IPage | undefined>(pages.get("introduce") ?? undefined)
 
     useEffect(() => {
+        console.log(pages.get(title));
         setCurrent((c) => {
             return pages.get(title);
         })

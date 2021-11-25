@@ -29,6 +29,29 @@ export const AboutMeSectionWrapper = styled.section`
       z-index: 99;
       width: 40%;
       padding-right: 2em;
+      
+      ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        
+        li {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          margin-bottom: 1em;
+          
+          &:before {
+            height: 2px;
+            width: 20px;
+            margin-right: 1em;
+            background-color: ${(props) => (props.theme.fourth)};
+            display: block;
+            content: "";
+          }
+        }
+      }
     }
   }
   
