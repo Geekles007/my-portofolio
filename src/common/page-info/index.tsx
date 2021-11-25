@@ -1,6 +1,7 @@
-import React, {memo} from 'react';
+import React, {memo, useEffect, useState} from 'react';
 import styled from "styled-components";
 import {size} from "../../constants";
+import {IPage} from "../../sections/hello-section";
 
 const PageInfoWrapper = styled.div`
   display: flex;
@@ -39,17 +40,51 @@ const PageInfoWrapper = styled.div`
 
 interface PageInfoWrapperProps {
     title: string;
-    pageNumber: string;
 }
 
-const Index = ({title, pageNumber}: PageInfoWrapperProps) => {
+const pages: Map<string, IPage> = new Map<string, IPage>([
+    ["introduce", {
+        number: "01",
+        title: "Introduction"
+    }],
+    ["about-me", {
+        number: "02",
+        title: "About Me"
+    }],
+    ["experiences", {
+        number: "03",
+        title: "Experiences"
+    }],
+    ["study", {
+        number: "04",
+        title: "Study"
+    }],
+    ["funny-projects", {
+        number: "05",
+        title: "Funny Projects"
+    }],
+    ["contact-me", {
+        number: "06",
+        title: "Contact Me"
+    }],
+])
+
+const PageInfo = ({title}: PageInfoWrapperProps) => {
+
+    const [current, setCurrent] = useState<IPage | undefined>(pages.get("introduce") ?? undefined)
+
+    useEffect(() => {
+        setCurrent((c) => {
+            return pages.get(title);
+        })
+    }, [title])
 
     return <PageInfoWrapper>
-        <h2>{pageNumber}</h2>
-        <div className="separator"></div>
-        <span>{title}</span>
+        <h2>{current?.number ?? ""}</h2>
+        <div className="separator" />
+        <span>{current?.title ?? ""}</span>
     </PageInfoWrapper>
 
 }
 
-export default memo(Index);
+export default memo(PageInfo);

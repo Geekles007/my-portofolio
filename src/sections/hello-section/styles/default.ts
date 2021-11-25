@@ -30,11 +30,25 @@ export const HelloSectionWrapper = styled.div`
     width: 100%;
     align-items: center;
   }
+  
+  .resume-button {
+    border: 3px solid ${(props) => (props.theme.fourth)};
+    padding: 1em 1em;
+    color: #fff;
+    margin: 1em 0;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+    cursor: pointer;
+  }
 
   .info-desc {
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    align-items: flex-start;
+    z-index: 99;
     color: ${(props) => (props.theme.textColor)};
     margin-left: 2em;
     position: absolute;

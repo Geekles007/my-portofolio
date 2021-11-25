@@ -10,6 +10,7 @@ import {defaultPadding} from "../../constants";
 import StudyUI from "../../sections/study-section";
 import FunnyProjects from "../../sections/funny-projects-section";
 import ContactMe from "../../sections/contact-me-section";
+import ScrollToTop from "../../common/go-to-top-button";
 
 interface MainUIProps {
 
@@ -39,6 +40,7 @@ const MainUI = ({}: MainUIProps) => {
         <StudyUI name={"study"} />
         <FunnyProjects name={"funny-projects"} />
         <ContactMe name={"contact-me"} />
+        <ScrollToTop />
     </MainWrapper>
 
 }

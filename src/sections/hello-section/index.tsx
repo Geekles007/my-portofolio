@@ -1,4 +1,4 @@
-import React, {memo, useState} from 'react';
+import React, {memo, useCallback, useState} from 'react';
 import PageInfo from "./../../common/page-info";
 import PageStater from "../../common/page-stater";
 import { HelloSectionWrapper } from './styles/default';
@@ -9,14 +9,19 @@ interface HelloSectionProps {
     name: string;
 }
 
+export interface IPage {
+    title: string;
+    number: string;
+}
+
 const HelloSection = ({ref, name}: HelloSectionProps) => {
 
-    const [title, setTitle] = useState("Introduce");
+    const [title, setTitle] = useState<string>("Introduce");
 
     return <Element name={name}>
         <HelloSectionWrapper ref={ref}>
             <div className="page-stater">
-                <PageInfo title={title} pageNumber={"01"}/>
+                <PageInfo title={title}/>
                 <PageStater handleTitleChange={setTitle}/>
             </div>
             <div className="info-desc">
@@ -24,6 +29,7 @@ const HelloSection = ({ref, name}: HelloSectionProps) => {
                 <strong>TONDJI NIAT Jauspin Lee</strong>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur dicta eos minus omnis
                     quasi quidem, tempora? Ea eligendi enim.</p>
+                <a href="#" className={"resume-button"}>Download my resume </a>
             </div>
             <div className="_go-down" />
         </HelloSectionWrapper>
