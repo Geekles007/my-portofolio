@@ -5,12 +5,13 @@ import {ProjectItemWrapper} from "./styles/default";
 
 export interface Project {
     type?: string;
-    image?: string;
+    image?: any;
     title?: string;
-    description?: ReactNode;
+    description?: ReactNode | string;
     stacks?: string[];
     github?: string;
     link?: string;
+    side?: "left" | "right"
 }
 
 interface ProjectItemProps {
@@ -22,25 +23,28 @@ const ProjectItem = ({position, item}: ProjectItemProps) => {
 
     return <ProjectItemWrapper position={position}>
         <div className="preview">
-            <img src={iresto} alt="iresto website"/>
+            <img src={item?.image ?? ""} alt={item?.title}/>
         </div>
         <div className="details">
-            <span>Web application</span>
-            <h3>IResto.</h3>
+            <span>{item?.type ?? ""}</span>
+            <h3>{item?.title ?? ""}.</h3>
             <div className="description-panel">
-                Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Animi esse itaque omnis rerum sapiente, sint
-                soluta <span>suscipit</span>?
+                {item?.description ?? ""}
             </div>
             <ul>
-                <li>Laravel</li>
-                <li>Inertia.js</li>
-                <li>React</li>
-                <li>Typescript</li>
-                <li>Node.js</li>
+                {
+                    item?.stacks?.map(stack => {
+                        return <li>{stack}</li>
+                    })
+                }
             </ul>
             <div className="actions">
-                <a href="#"><FaGithub/></a>
-                <a href="#"><FaLink/></a>
+                {
+                    item?.github ? <a href={item?.github ?? "#"}><FaGithub/></a> : <></>
+                }
+                {
+                    item?.link ? <a href={item?.link ?? ""}><FaLink/></a> : <></>
+                }
             </div>
         </div>
     </ProjectItemWrapper>

@@ -40,7 +40,7 @@ const ExperiencesUIWrapper = styled.section`
   }
 
   p {
-    text-align: center;
+    text-align: left;
   }
 
   .timeline-wrapper {
@@ -88,14 +88,42 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                 <h2>As Developer</h2>
 
                 <VerticalTimeline className={"timeline-wrapper"}>
-                    <ExperienceItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"}
-                                    myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
-                    <ExperienceItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"}
-                                    myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
-                    <ExperienceItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"}
-                                    myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
-                    <ExperienceItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"}
-                                    myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
+                    <ExperienceItem period={"December 2020 - present"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>TSN электро</span></>}
+                                    myTasks={
+                                        <p>
+                                            Development of ERP web application (<span>ReactJS, Typescript, GraphQL, Carbon design system</span>) <br/>
+                                            Analyse systems and <span>optimize</span> them <br />
+                                            Define the <span>micro frontends structure</span> and <span>deployment process</span>
+                                        </p>
+                                    }/>
+                    <ExperienceItem period={"August 2020 - December 2020"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>Web Mechanica</span></>}
+                                    myTasks={
+                                        <p>
+                                            Development of website (<span>fromscratch</span>) for company around the world (<span>Bitrix</span>) <br/>
+                                            System maintenances <br />
+                                            <a href="https://www.vertex-awp.ru">https://www.vertex-awp.ru</a> <br/>
+                                            <a href="https://www.elac.study">https://www.elac.study</a>
+                                        </p>
+                                    }/>
+                    <ExperienceItem period={"January 2016 - August 2019"} position="Web developer freelance"
+                                    myTasks={
+                                        <p>
+                                            Development of a <span>cinema ticket booking</span> application <br />
+                                            Development mobile application for <span>money transaction</span> <br />
+                                            Development of an <span>interactive map</span> <br />
+                                            Development of an <span>audio streaming api</span> <br />
+                                            Development of an <span>article writing system</span> <br />
+                                            Clinic management system <br />
+                                            Development of an application to <span>book travel tickets</span>
+                                        </p>
+                                    }/>
+                    <ExperienceItem period={"March 2017 - August 2017"} position="JAVA/JAVA EE developer"
+                                    companyName={<>Germany - &nbsp;<span className={"important"}>Kumity</span></>}
+                                    myTasks={
+                                        <p>
+                                            Development of the money transfer module of an <span>electronic currency</span>
+                                        </p>
+                                    }/>
                 </VerticalTimeline>
 
                 <h2>As Designer</h2>

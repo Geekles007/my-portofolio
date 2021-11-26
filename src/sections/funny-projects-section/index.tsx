@@ -1,8 +1,9 @@
 import React, {memo} from 'react';
 import styled from "styled-components";
 import {Element} from "react-scroll";
-import ProjectItem from "./children/project-item";
+import ProjectItem, {Project} from "./children/project-item";
 import {size} from "../../constants";
+import FunnyProjectController from "./controller";
 
 const FunnyProjectsWrapper = styled.div`
 
@@ -36,14 +37,16 @@ interface FunnyProjectsProps {
 const FunnyProjects = ({name}: FunnyProjectsProps) => {
 
     return <FunnyProjectsWrapper>
-        <Element name={"funny-projects"}>
+        <Element name={name}>
             <section>
                 <h2>Some funny things that I've built</h2>
 
                 <div className="list-projects">
-                    <ProjectItem position={"right"}/>
-                    <ProjectItem position={"left"}/>
-                    <ProjectItem position={"right"}/>
+                    {
+                        FunnyProjectController.projects?.map((item: Project) => {
+                            return <ProjectItem item={item} position={item.side ?? "right"}/>
+                        })
+                    }
                 </div>
             </section>
         </Element>

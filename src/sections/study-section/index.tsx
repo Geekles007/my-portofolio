@@ -39,12 +39,12 @@ const StudyUI = ({name}: StudyUIProps) => {
                 <h2>About my educational background</h2>
 
                 <VerticalTimeline className={"timeline-wrapper"}>
-                    <StudyItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"} icon={<img src={unn} alt={"unn logo"} />}
-                               myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
-                    <StudyItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"} icon={<img src={bachelor} alt={"3il logo"} />}
-                               myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
-                    <StudyItem period={"2011 - present"} position="Creative Director" companyName={"Miami, FL"} icon={<img src={ccnb} alt={"ccnb logo"} />}
-                                    myTasks={"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"}/>
+                    <StudyItem period={"2019 - present"} position="Lobachevsky University" companyName={"Nizhny Novgorod, Russia"} icon={<img src={unn} alt={"unn logo"} />}
+                               myTasks={"Bachelor - Institute of Information Technology, Mathematics and Mechanics"}/>
+                    <StudyItem period={"2015 - 2016"} position="3IL Limoges" companyName={"Limoges, France"} icon={<img src={bachelor} alt={"3il logo"} />}
+                               myTasks={"Diploma in information system design"}/>
+                    <StudyItem period={"2013 - 2014"} position="New Brunswick Community College" companyName={"New brunswick, Canada"} icon={<img src={ccnb} alt={"ccnb logo"} />}
+                                    myTasks={"DEC Analysis and Programming"}/>
                 </VerticalTimeline>
             </section>
         </Element>

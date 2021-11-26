@@ -3,7 +3,7 @@ import JaugeUI from "../../common/jauge";
 import LangItemUI from "./children/lang-item";
 import {FaBookReader, FaCode, FaDrawPolygon, FaGamepad} from "react-icons/all";
 import {currentTheme} from "../../theme/theme";
-import { AboutMeSectionWrapper } from './styles';
+import {AboutMeSectionWrapper} from './styles';
 import {Element} from "react-scroll";
 
 interface AboutMeSectionProps {
@@ -17,9 +17,10 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
             <div className="about">
                 <div className="skills-and-text">
                     <h4>Who I Am</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos, ipsa numquam perferendis
-                        praesentium qui repellat vitae. Ad, aliquid aperiam at maxime minus nam quidem quisquam ratione.
-                        Explicabo, nemo quibusdam. Lorem ipsum dolor sit amet.</p>
+                    <p>During my all career as developer I learned a lot from others
+                        (<span>teammates</span>, <span>customers</span>, etc...) -
+                        and with time I acquired a lot of <span>experiences</span> and <span>knowledges</span>. I'm
+                        always ready to learn news things and improve myself as person and as developer.</p>
                     <div className="skill-jauges">
                         <JaugeUI percent={85} title={"Web development"}/>
                         <JaugeUI percent={60} title={"Mobile development"}/>
@@ -37,32 +38,34 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                         <li>Affinity Designer</li>
                         <li>PostgreSQL</li>
                         <li>Flutter</li>
+                        <li>Laravel</li>
+                        <li>Photoshop</li>
                     </ul>
                 </div>
                 <div className="more-details">
                     <h4>Spoken languages</h4>
                     <div className="languages">
-                        <LangItemUI lang={"French"} level={"Native"} />
-                        <LangItemUI lang={"English"} level={"Intermediate"} />
-                        <LangItemUI lang={"Italian"} level={"Level B2"} />
-                        <LangItemUI lang={"Russian"} level={"A1 Basic"} />
+                        <LangItemUI lang={"French"} level={"Native"}/>
+                        <LangItemUI lang={"English"} level={"Intermediate"}/>
+                        <LangItemUI lang={"Italian"} level={"Level B2"}/>
+                        <LangItemUI lang={"Russian"} level={"A1 Basic"}/>
                     </div>
                     <h4>Hobbies</h4>
                     <div className="hobbies">
                         <div className="hob-card">
-                            <FaBookReader color={currentTheme.fourth} size={25} />
+                            <FaBookReader color={currentTheme.fourth} size={25}/>
                             <strong>Read Book and novels</strong>
                         </div>
                         <div className="hob-card">
-                            <FaGamepad color={currentTheme.fourth} size={25} />
+                            <FaGamepad color={currentTheme.fourth} size={25}/>
                             <strong>Video games</strong>
                         </div>
                         <div className="hob-card">
-                            <FaCode color={currentTheme.fourth} size={25} />
+                            <FaCode color={currentTheme.fourth} size={25}/>
                             <strong>Coding</strong>
                         </div>
                         <div className="hob-card">
-                            <FaDrawPolygon color={currentTheme.fourth} size={25} />
+                            <FaDrawPolygon color={currentTheme.fourth} size={25}/>
                             <strong>Design</strong>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, {memo, useCallback, useState} from 'react';
+import React, {memo, useState} from 'react';
 import PageInfo from "./../../common/page-info";
 import PageStater from "../../common/page-stater";
 import { HelloSectionWrapper } from './styles/default';
@@ -27,9 +27,8 @@ const HelloSection = ({ref, name}: HelloSectionProps) => {
             <div className="info-desc">
                 <h1>Hi, I'm</h1>
                 <strong>TONDJI NIAT Jauspin Lee</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur dicta eos minus omnis
-                    quasi quidem, tempora? Ea eligendi enim.</p>
-                <a href="#" className={"resume-button"}>Download my resume </a>
+                <p>I'm a <span>fullstack developer</span> and <span>Graphic designer</span>. I'm very passionated by everything related to technologies and design.</p>
+                <a href={"/cv.pdf"} target="_blank" className={"resume-button"}>Download my resume </a>
             </div>
             <div className="_go-down" />
         </HelloSectionWrapper>

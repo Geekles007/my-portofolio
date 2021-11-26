@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="70b894ac-2a8c-4411-b146-e01e70f31bed" name="ebirly-server" url="http://165.22.43.191">
+        <fileTransfer rootFolder="/home" accessType="SFTP" host="165.22.43.191" port="22" sshConfigId="ee0540fb-aa0c-4ded-a7b0-2f0ddaaf7c63" sshConfig="root@165.22.43.191:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

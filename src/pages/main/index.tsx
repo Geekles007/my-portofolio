@@ -34,6 +34,20 @@ const MainWrapper = styled.div`
       padding: 0 1em;
     }
   }
+  
+  p {
+    span {
+      color: ${(props) => (props.theme.fourth)};
+    }
+
+    a {
+      color: ${(props) => (props.theme.fourth)};
+    }
+  }
+  
+  span.important {
+    color: ${(props) => (props.theme.fourth)};
+  }
 `;
 
 const MainUI = ({}: MainUIProps) => {

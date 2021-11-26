@@ -61,10 +61,10 @@ const HeaderUI = ({}: HeaderUIProps) => {
         <div className="header-content">
             <a className="_logo" href={"#"}>TNJL</a>
             <ul>
-                <li><a href="#"><FaInstagram size={iconSize} color={currentTheme.textColor} /></a></li>
-                <li><a href="#"><FaDribbble size={iconSize} color={currentTheme.textColor} /></a></li>
-                <li><a href="#"><FaGithub size={iconSize} color={currentTheme.textColor} /></a></li>
-                <li><a href="#"><FaLinkedin size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a href="https://www.instagram.com/ibird.design/" target={"_blank"}><FaInstagram size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a href="https://dribbble.com/ibirddesign" target="_blank"><FaDribbble size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a href="https://github.com/Geekles007" target={"_blank"}><FaGithub size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a href={"https://www.linkedin.com/company/64646551"} target="_blank"><FaLinkedin size={iconSize} color={currentTheme.textColor} /></a></li>
             </ul>
         </div>
     </HeaderUIWrapper>

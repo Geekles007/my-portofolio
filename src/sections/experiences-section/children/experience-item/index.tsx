@@ -42,7 +42,7 @@ const ExperienceItemWrapper = styled(VerticalTimelineElement)`
 
 interface ExperienceItemProps {
     position: string;
-    companyName: string;
+    companyName?: ReactNode | string;
     myTasks: ReactNode | string;
     period: string;
     icon?: IconType;
@@ -59,7 +59,9 @@ const ExperienceItem = ({position, companyName, myTasks, period, icon}: Experien
         icon={icon ?? <FaUser/>}
     >
         <h3 className="vertical-timeline-element-title">{position}</h3>
-        <h4 className="vertical-timeline-element-subtitle">{companyName}</h4>
+        {
+            companyName ? <h4 className="vertical-timeline-element-subtitle">{companyName}</h4> : <></>
+        }
         <div className={"paragraph"}>
             {myTasks}
         </div>
