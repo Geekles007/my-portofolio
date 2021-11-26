@@ -1,0 +1,12 @@
+version: "3.1"
+
+services:
+  workspace:
+    build:
+      context: ./
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    container_name: ibird-design
+    stdin_open: true
