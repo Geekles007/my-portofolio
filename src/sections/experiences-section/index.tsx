@@ -45,6 +45,7 @@ const ExperiencesUIWrapper = styled.section`
 
   .timeline-wrapper {
     margin-top: 1em;
+    z-index: 99;
   }
 
   .see-more-button {
@@ -96,7 +97,7 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                                             Define the <span>micro frontends structure</span> and <span>deployment process</span>
                                         </p>
                                     }/>
-                    <ExperienceItem period={"August 2020 - December 2020"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>Web Mechanica</span></>}
+                    <ExperienceItem period={"May 2020 - December 2020"} position="Fullstack developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>Web Mechanica</span></>}
                                     myTasks={
                                         <p>
                                             Development of website (<span>fromscratch</span>) for company around the world (<span>Bitrix</span>) <br/>

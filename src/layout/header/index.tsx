@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {FaDribbble, FaGithub, FaInstagram, FaLinkedin} from "react-icons/all";
 import {currentTheme} from "../../theme/theme";
 import {size} from "../../constants";
+import logo from "./../../assets/images/ebirly-white.svg"
 
 const HeaderUIWrapper = styled.div`
   background-color: transparent;
@@ -19,11 +20,8 @@ const HeaderUIWrapper = styled.div`
     justify-content: space-between;
 
     ._logo {
-      color: ${(props) => props.theme.textColor};
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 2.5em;
-      font-family: "Poppins", serif;
+      width: 70px;
+      height: 70px;
     }
 
     ul {
@@ -59,7 +57,7 @@ const HeaderUI = ({}: HeaderUIProps) => {
 
     return <HeaderUIWrapper>
         <div className="header-content">
-            <a className="_logo" href={"#"}>TNJL</a>
+            <a className="_logo" href={"#"}><img src={logo} alt="logo ebirly Lee"/></a>
             <ul>
                 <li><a href="https://www.instagram.com/ibird.design/" target={"_blank"}><FaInstagram size={iconSize} color={currentTheme.textColor} /></a></li>
                 <li><a href="https://dribbble.com/ibirddesign" target="_blank"><FaDribbble size={iconSize} color={currentTheme.textColor} /></a></li>
