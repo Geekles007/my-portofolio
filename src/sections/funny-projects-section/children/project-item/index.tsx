@@ -40,10 +40,10 @@ const ProjectItem = ({position, item}: ProjectItemProps) => {
             </ul>
             <div className="actions">
                 {
-                    item?.github ? <a href={item?.github ?? "#"}><FaGithub/></a> : <></>
+                    item?.github ? <a href={item?.github ?? "#"} target={"_blank"}><FaGithub/></a> : <></>
                 }
                 {
-                    item?.link ? <a href={item?.link ?? ""}><FaLink/></a> : <></>
+                    item?.link ? <a href={item?.link ?? ""} target={"_blank"}><FaLink/></a> : <></>
                 }
             </div>
         </div>

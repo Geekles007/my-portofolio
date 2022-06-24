@@ -31,7 +31,7 @@ class FunnyProjectController {
         {
             type: "Web application",
             github: "https://github.com/Geekles007/ibird-group-website-frontend",
-            link: "http://www.ibird-group.com",
+            link: "https://ibird-design.vercel.app",
             image: ibird,
             title: "Ibird design website",
             stacks: ["React", "Typescript", "Node.js", "Dribbble API"],
