@@ -3,6 +3,7 @@ import iresto from "./../../../assets/images/iresto.png";
 import camerapps from "./../../../assets/images/camerapps.png";
 import ibird from "./../../../assets/images/ibird.png";
 import zzolloo from "./../../../assets/images/zzollo.png";
+import wysiwygism from "./../../../assets/images/wysiwygism.png";
 
 class FunnyProjectController {
 
@@ -52,6 +53,18 @@ class FunnyProjectController {
                 A little funny project to make research in github, bitbucket and gitlab at the same time.
             </>,
             side: "left"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/wysiwygism",
+            link: "https://wysiwygism.vercel.app",
+            image: wysiwygism,
+            title: "Wysiwygism",
+            stacks: ["React", "Typescript", "Node.js"],
+            description: <>
+                A wysiwyg editor.
+            </>,
+            side: "right"
         },
     ]
 
