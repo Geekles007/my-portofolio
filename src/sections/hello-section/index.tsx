@@ -26,9 +26,9 @@ const HelloSection = ({ref, name}: HelloSectionProps) => {
             </div>
             <div className="info-desc">
                 <h1>Hi, I'm</h1>
-                <strong>TONDJI NIAT Jauspin Lee</strong>
+                <strong>TONDJI NIAT J. Lee</strong>
                 <p>I'm a <span>Software Engineer</span> and <span>Graphic designer</span>. I'm very passionated by everything related to technologies and design.</p>
-                <a href={"./../../assets/documents/myportofolio-lee.pdf"} target="_blank" className={"resume-button"}>Download my resume </a>
+                <a href={"/myportofolio-lee.pdf"} target="_blank" className={"resume-button"}>Download my resume </a>
             </div>
             <div className="_go-down" />
         </HelloSectionWrapper>
