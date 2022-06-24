@@ -2,6 +2,7 @@ import {Project} from "../children/project-item";
 import iresto from "./../../../assets/images/iresto.png";
 import camerapps from "./../../../assets/images/camerapps.png";
 import ibird from "./../../../assets/images/ibird.png";
+import zzolloo from "./../../../assets/images/zzollo.png";
 
 class FunnyProjectController {
 
@@ -39,6 +40,18 @@ class FunnyProjectController {
                 It's my designer portofolio, I really like this job and what I do and I hope my customer too.
             </>,
             side: "right"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/zzollo",
+            link: "https://zzolloo.vercel.app",
+            image: zzolloo,
+            title: "Zzolloo app",
+            stacks: ["React", "Typescript", "Node.js", "Github API", "bitbucket API", "Gitlab API"],
+            description: <>
+                A little funny project to make research in github, bitbucket and gitlab at the same time.
+            </>,
+            side: "left"
         },
     ]
 
