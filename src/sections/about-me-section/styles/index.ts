@@ -91,6 +91,17 @@ export const AboutMeSectionWrapper = styled.section`
       }
     }
   }
+  
+  ul._certifs {
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: .5s;
+      &:hover {
+        color: ${(props) => (props.theme.fourth)};
+      }
+    }
+  }
 
   @media (max-width: ${size.laptop}) {
     .about {
