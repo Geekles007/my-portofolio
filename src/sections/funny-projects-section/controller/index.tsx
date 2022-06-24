@@ -46,7 +46,7 @@ class FunnyProjectController {
             github: "https://github.com/Geekles007/zzollo",
             link: "https://zzolloo.vercel.app",
             image: zzolloo,
-            title: "Zzolloo app",
+            title: "Zzolloo",
             stacks: ["React", "Typescript", "Node.js", "Github API", "bitbucket API", "Gitlab API"],
             description: <>
                 A little funny project to make research in github, bitbucket and gitlab at the same time.
