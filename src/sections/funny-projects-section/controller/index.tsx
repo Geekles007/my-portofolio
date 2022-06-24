@@ -23,7 +23,7 @@ class FunnyProjectController {
             type: "Web application",
             github: "https://github.com/osscameroon/camerapps",
             image: camerapps,
-            title: "IResto",
+            title: "CamerApps",
             stacks: ["React", "Typescript", "Node.js"],
             description: <>
                 Web application to find all community, application (<span>mobile</span> or <span>web</span>) developed in Africa
