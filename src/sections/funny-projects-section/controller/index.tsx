@@ -4,6 +4,7 @@ import camerapps from "./../../../assets/images/camerapps.png";
 import ibird from "./../../../assets/images/ibird.png";
 import zzolloo from "./../../../assets/images/zzollo.png";
 import wysiwygism from "./../../../assets/images/wysiwygism.png";
+import beingplus from "./../../../assets/images/beingplus.png";
 
 class FunnyProjectController {
 
@@ -55,7 +56,7 @@ class FunnyProjectController {
             side: "left"
         },
         {
-            type: "Web application",
+            type: "Reusable react component",
             github: "https://github.com/Geekles007/wysiwygism",
             link: "https://wysiwygism.vercel.app",
             image: wysiwygism,
@@ -65,6 +66,18 @@ class FunnyProjectController {
                 A wysiwyg editor.
             </>,
             side: "right"
+        },
+        {
+            type: "Website",
+            github: "https://github.com/Geekles007/funny-fromscratch-template-works/tree/master/beingplus",
+            link: "https://beingplus.vercel.app",
+            image: beingplus,
+            title: "Beingplus",
+            stacks: ["html", "css", "js"],
+            description: <>
+                Little template developed from scratch.
+            </>,
+            side: "left"
         },
     ]
 
