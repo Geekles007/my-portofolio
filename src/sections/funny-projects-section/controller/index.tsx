@@ -5,6 +5,7 @@ import ibird from "./../../../assets/images/ibird.png";
 import zzolloo from "./../../../assets/images/zzollo.png";
 import wysiwygism from "./../../../assets/images/wysiwygism.png";
 import beingplus from "./../../../assets/images/beingplus.png";
+import hooksbible from "./../../../assets/images/hooksbible.png";
 
 class FunnyProjectController {
 
@@ -78,6 +79,18 @@ class FunnyProjectController {
                 Little template developed from scratch.
             </>,
             side: "left"
+        },
+        {
+            type: "Website",
+            github: "https://github.com/Geekles007/hooks-bible",
+            link: "https://hooks-bible.vercel.app",
+            image: hooksbible,
+            title: "Hooks Bible",
+            stacks: ["React", "Typescript", "Node.js"],
+            description: <>
+                A project to get some pre written react hook ready to use.
+            </>,
+            side: "right"
         },
     ]
 
