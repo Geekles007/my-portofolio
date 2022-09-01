@@ -89,7 +89,7 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                 <h2>As Developer</h2>
 
                 <VerticalTimeline className={"timeline-wrapper"}>
-                    <ExperienceItem period={"December 2020 - present"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>TSN электро</span></>}
+                    <ExperienceItem period={"December 2020 - Febuary 2022"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>TSN электро</span></>}
                                     myTasks={
                                         <p>
                                             Development of ERP web application (<span>ReactJS, Typescript, GraphQL, Carbon design system</span>) <br/>
