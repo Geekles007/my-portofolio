@@ -6,6 +6,7 @@ import zzolloo from "./../../../assets/images/zzollo.png";
 import wysiwygism from "./../../../assets/images/wysiwygism.png";
 import beingplus from "./../../../assets/images/beingplus.png";
 import hooksbible from "./../../../assets/images/hooksbible.png";
+import beingmusic from "./../../../assets/images/beingmusic.png";
 
 class FunnyProjectController {
 
@@ -38,7 +39,7 @@ class FunnyProjectController {
             link: "https://ibird-design.vercel.app",
             image: ibird,
             title: "Ibird design website",
-            stacks: ["React", "Typescript", "Node.js", "Dribbble API"],
+            stacks: ["React", "Typescript", "Node.js", "Dribbble API", "Affinity designer"],
             description: <>
                 It's my designer portofolio, I really like this job and what I do and I hope my customer too.
             </>,
@@ -91,6 +92,18 @@ class FunnyProjectController {
                 A project to get some pre written react hook ready to use.
             </>,
             side: "right"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/beingmusic",
+            link: "https://beingmusic.vercel.app",
+            image: beingmusic,
+            title: "Being Music",
+            stacks: ["React", "Typescript", "Node.js", "Affinity designer"],
+            description: <>
+                Streaming music's web application
+            </>,
+            side: "left"
         },
     ]
 
