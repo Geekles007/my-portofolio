@@ -7,6 +7,7 @@ import wysiwygism from "./../../../assets/images/wysiwygism.png";
 import beingplus from "./../../../assets/images/beingplus.png";
 import hooksbible from "./../../../assets/images/hooksbible.png";
 import beingmusic from "./../../../assets/images/beingmusic.png";
+import bozoo from "./../../../assets/images/bozoo.png";
 
 class FunnyProjectController {
 
@@ -104,6 +105,18 @@ class FunnyProjectController {
                 Streaming music's web application
             </>,
             side: "left"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/bozoo",
+            link: "https://bozoo.vercel.app",
+            image: bozoo,
+            title: "Bozoo",
+            stacks: ["Next.js", "Typescript", "Node.js", "Affinity designer"],
+            description: <>
+                Afro NFT's marketplace
+            </>,
+            side: "right"
         },
     ]
 
