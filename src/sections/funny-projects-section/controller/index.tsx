@@ -8,6 +8,7 @@ import beingplus from "./../../../assets/images/beingplus.png";
 import hooksbible from "./../../../assets/images/hooksbible.png";
 import beingmusic from "./../../../assets/images/beingmusic.png";
 import bozoo from "./../../../assets/images/bozoo.png";
+import henspiration from "./../../../assets/images/henspiration.png";
 
 class FunnyProjectController {
 
@@ -117,6 +118,18 @@ class FunnyProjectController {
                 Afro NFT's marketplace
             </>,
             side: "right"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/henspiration",
+            link: "https://henspiration.vercel.app",
+            image: henspiration,
+            title: "Henspiration streaming app",
+            stacks: ["React", "Typescript", "Node.js", "Spotify API", "Vite"],
+            description: <>
+                Afro NFT's marketplace
+            </>,
+            side: "left"
         },
     ]
 
