@@ -37,6 +37,42 @@ class FunnyProjectController {
         },
         {
             type: "Web application",
+            github: "https://github.com/Geekles007/beingmusic",
+            link: "https://beingmusic.vercel.app",
+            image: beingmusic,
+            title: "Being Music",
+            stacks: ["React", "Typescript", "Node.js", "Affinity designer"],
+            description: <>
+            Streaming music's web application
+            </>,
+            side: "left"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/bozoo",
+            link: "https://bozoo.vercel.app",
+            image: bozoo,
+            title: "Bozoo",
+            stacks: ["Next.js", "Typescript", "Node.js", "Affinity designer"],
+            description: <>
+            Afro NFT's marketplace
+            </>,
+            side: "right"
+        },
+        {
+            type: "Web application",
+            github: "https://github.com/Geekles007/henspiration",
+            link: "https://henspiration.vercel.app",
+            image: henspiration,
+            title: "Henspiration streaming app",
+            stacks: ["React", "Typescript", "Node.js", "Spotify API", "Vite"],
+            description: <>
+            Afro NFT's marketplace
+            </>,
+            side: "left"
+        },
+        {
+            type: "Web application",
             github: "https://github.com/Geekles007/ibird-group-website-frontend",
             link: "https://ibird-design.vercel.app",
             image: ibird,
@@ -94,43 +130,7 @@ class FunnyProjectController {
                 A project to get some pre written react hook ready to use.
             </>,
             side: "right"
-        },
-        {
-            type: "Web application",
-            github: "https://github.com/Geekles007/beingmusic",
-            link: "https://beingmusic.vercel.app",
-            image: beingmusic,
-            title: "Being Music",
-            stacks: ["React", "Typescript", "Node.js", "Affinity designer"],
-            description: <>
-                Streaming music's web application
-            </>,
-            side: "left"
-        },
-        {
-            type: "Web application",
-            github: "https://github.com/Geekles007/bozoo",
-            link: "https://bozoo.vercel.app",
-            image: bozoo,
-            title: "Bozoo",
-            stacks: ["Next.js", "Typescript", "Node.js", "Affinity designer"],
-            description: <>
-                Afro NFT's marketplace
-            </>,
-            side: "right"
-        },
-        {
-            type: "Web application",
-            github: "https://github.com/Geekles007/henspiration",
-            link: "https://henspiration.vercel.app",
-            image: henspiration,
-            title: "Henspiration streaming app",
-            stacks: ["React", "Typescript", "Node.js", "Spotify API", "Vite"],
-            description: <>
-                Afro NFT's marketplace
-            </>,
-            side: "left"
-        },
+        }
     ]
 
 }
