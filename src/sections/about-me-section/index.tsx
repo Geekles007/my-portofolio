@@ -39,7 +39,7 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                         <li>PostgreSQL</li>
                         <li>Flutter</li>
                         <li>Laravel</li>
-                        <li>Photoshop</li>
+                        <li>Next.js</li>
                     </ul>
                     <h4>My certifications</h4>
                     <ul className={"_certifs"}>
