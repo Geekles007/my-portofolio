@@ -57,12 +57,12 @@ const HeaderUI = ({}: HeaderUIProps) => {
 
     return <HeaderUIWrapper>
         <div className="header-content">
-            <a className="_logo" href={"#"}><img src={logo} alt="logo ebirly Lee"/></a>
+            <a className="_logo" href={"/"}><img src={logo} alt="logo ebirly Lee"/></a>
             <ul>
-                <li><a href="https://www.instagram.com/ibird.design/" target={"_blank"}><FaInstagram size={iconSize} color={currentTheme.textColor} /></a></li>
-                <li><a href="https://dribbble.com/ibirddesign" target="_blank"><FaDribbble size={iconSize} color={currentTheme.textColor} /></a></li>
-                <li><a href="https://github.com/Geekles007" target={"_blank"}><FaGithub size={iconSize} color={currentTheme.textColor} /></a></li>
-                <li><a href={"https://www.linkedin.com/company/64646551"} target="_blank"><FaLinkedin size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a rel="noreferrer" href="https://www.instagram.com/ibird.design/" target={"_blank"}><FaInstagram size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a rel="noreferrer" href="https://dribbble.com/ibirddesign" target="_blank"><FaDribbble size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a rel="noreferrer" href="https://github.com/Geekles007" target={"_blank"}><FaGithub size={iconSize} color={currentTheme.textColor} /></a></li>
+                <li><a rel="noreferrer" href={"https://www.linkedin.com/company/64646551"} target="_blank"><FaLinkedin size={iconSize} color={currentTheme.textColor} /></a></li>
             </ul>
         </div>
     </HeaderUIWrapper>

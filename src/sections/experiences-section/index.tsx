@@ -102,8 +102,8 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                                         <p>
                                             Development of website (<span>fromscratch</span>) for company around the world (<span>Bitrix</span>) <br/>
                                             System maintenances <br />
-                                            <a href="https://www.vertex-awp.ru">https://www.vertex-awp.ru</a> <br/>
-                                            <a href="https://www.elac.study">https://www.elac.study</a>
+                                            <a target="_blank" rel="noreferrer" href="https://www.vertex-awp.ru">https://www.vertex-awp.ru</a> <br/>
+                                            <a target="_blank" rel="noreferrer" href="https://www.elac.study">https://www.elac.study</a>
                                         </p>
                                     }/>
                     <ExperienceItem period={"January 2016 - August 2019"} position="Web developer freelance"
@@ -132,7 +132,7 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
 
                 <DribbbleWorks/>
 
-                <a className={"see-more-button"} href="https://dribbble.com/ibirddesign" target="_blank">See
+                <a rel="noreferrer" className={"see-more-button"} href="https://dribbble.com/ibirddesign" target="_blank">See
                     more <FaChevronRight className={"_iconic"} color={currentTheme.fourth}/></a>
             </ExperiencesUIWrapper>
         </Element>
