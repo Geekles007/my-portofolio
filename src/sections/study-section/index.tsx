@@ -39,7 +39,7 @@ const StudyUI = ({name}: StudyUIProps) => {
                 <h2>About my educational background</h2>
 
                 <VerticalTimeline className={"timeline-wrapper"}>
-                    <StudyItem period={"2019 - present"} position="Lobachevsky University" companyName={"Nizhny Novgorod, Russia"} icon={<img src={unn} alt={"unn logo"} />}
+                    <StudyItem period={"2019 - 2022"} position="Lobachevsky University" companyName={"Nizhny Novgorod, Russia"} icon={<img src={unn} alt={"unn logo"} />}
                                myTasks={"Bachelor - Institute of Information Technology, Mathematics and Mechanics"}/>
                     <StudyItem period={"2015 - 2016"} position="3IL Limoges" companyName={"Limoges, France"} icon={<img src={bachelor} alt={"3il logo"} />}
                                myTasks={"Diploma in information system design"}/>
