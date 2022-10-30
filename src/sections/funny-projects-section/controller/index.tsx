@@ -67,7 +67,7 @@ class FunnyProjectController {
             title: "Henspiration streaming app",
             stacks: ["React", "Typescript", "Node.js", "Spotify API", "Vite"],
             description: <>
-            Afro NFT's marketplace
+            Platform to listen an album called henspiration by hens from spotify api
             </>,
             side: "left"
         },
