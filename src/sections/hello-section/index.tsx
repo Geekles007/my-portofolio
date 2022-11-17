@@ -3,6 +3,7 @@ import PageInfo from "./../../common/page-info";
 import PageStater from "../../common/page-stater";
 import { HelloSectionWrapper } from './styles/default';
 import {Element} from "react-scroll";
+import DownloadButton from "../../common/download-button";
 
 interface HelloSectionProps {
     ref: any;
@@ -28,7 +29,7 @@ const HelloSection = ({ref, name}: HelloSectionProps) => {
                 <h1>Hi, I'm</h1>
                 <strong>TONDJI NIAT J. Lee</strong>
                 <p>I'm a <span>Software Engineer</span> and <span>Graphic designer</span>. I'm very passionated by everything related to technologies and design.</p>
-                <a rel="noreferrer" href={"/myportofolio-lee.pdf"} target="_blank" className={"resume-button"}>Download my resume </a>
+                <DownloadButton />
             </div>
             <div className="_go-down" />
         </HelloSectionWrapper>

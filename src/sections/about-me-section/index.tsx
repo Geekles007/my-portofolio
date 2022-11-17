@@ -45,6 +45,7 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                     <ul className={"_certifs"}>
                         <li><a rel="noreferrer" target={"_blank"} href="https://www.udemy.com/certificate/UC-931e7037-dfd7-4266-8d7e-1040b9012da1/">Microfrontends with React</a></li>
                         <li><a rel="noreferrer" target={"_blank"} href="https://www.freecodecamp.org/certification/fcc182b6d0f-8bee-4f97-aed9-2c166a2ca5c1/front-end-development-libraries">Front End Librairies</a></li>
+                        <li><a rel="noreferrer" target={"_blank"} href="https://www.freecodecamp.org/certification/fcc182b6d0f-8bee-4f97-aed9-2c166a2ca5c1/javascript-algorithms-and-data-structures">Javascript Algorithms and Data Structures</a></li>
                     </ul>
                 </div>
                 <div className="more-details">
