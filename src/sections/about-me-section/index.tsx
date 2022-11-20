@@ -29,6 +29,7 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                     <h4>My Stack</h4>
                     <ul>
                         <li>React</li>
+                        <li>Angular 2+</li>
                         <li>Node.js</li>
                         <li>Typescript</li>
                         <li>Micro frontends</li>
