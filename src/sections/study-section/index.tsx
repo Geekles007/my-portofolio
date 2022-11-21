@@ -8,6 +8,7 @@ import bachelor from "./../../assets/images/3il.png";
 import unn from "./../../assets/images/unn.png";
 
 const StudyUIWrapper = styled.div`
+  z-index: 99;
   
   section {
     padding-top: 2em;
