@@ -41,6 +41,7 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                         <li>Flutter</li>
                         <li>Laravel</li>
                         <li>Next.js</li>
+                        <li>Nest.js</li>
                     </ul>
                     <h4>My certifications</h4>
                     <ul className={"_certifs"}>
