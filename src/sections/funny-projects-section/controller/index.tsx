@@ -28,6 +28,7 @@ class FunnyProjectController {
         {
             type: "Web application",
             github: "https://github.com/Geekles007/lokimo-test",
+            link: "https://lokimo-map.vercel.app",
             image: lokimo,
             title: "Lokimo map",
             stacks: ["React", "Typescript", "Node.js"],
