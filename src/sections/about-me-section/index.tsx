@@ -45,9 +45,17 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                     </ul>
                     <h4>My certifications</h4>
                     <ul className={"_certifs"}>
-                        <li><a rel="noreferrer" target={"_blank"} href="https://www.udemy.com/certificate/UC-931e7037-dfd7-4266-8d7e-1040b9012da1/">Microfrontends with React</a></li>
-                        <li><a rel="noreferrer" target={"_blank"} href="https://www.freecodecamp.org/certification/fcc182b6d0f-8bee-4f97-aed9-2c166a2ca5c1/front-end-development-libraries">Front End Librairies</a></li>
-                        <li><a rel="noreferrer" target={"_blank"} href="https://www.freecodecamp.org/certification/fcc182b6d0f-8bee-4f97-aed9-2c166a2ca5c1/javascript-algorithms-and-data-structures">Javascript Algorithms and Data Structures</a></li>
+                        <li><a rel="noreferrer" target={"_blank"}
+                               href="https://www.udemy.com/certificate/UC-931e7037-dfd7-4266-8d7e-1040b9012da1/">Microfrontends
+                            with React</a></li>
+                        <li><a rel="noreferrer" target={"_blank"}
+                               href="https://www.freecodecamp.org/certification/fcc182b6d0f-8bee-4f97-aed9-2c166a2ca5c1/front-end-development-libraries">Front
+                            End Librairies</a></li>
+                        <li><a rel="noreferrer" target={"_blank"}
+                               href="https://www.freecodecamp.org/certification/fcc182b6d0f-8bee-4f97-aed9-2c166a2ca5c1/javascript-algorithms-and-data-structures">Javascript
+                            Algorithms and Data Structures</a></li>
+                        <li><a rel="noreferrer" target={"_blank"}
+                               href="https://www.apollographql.com/tutorials/certifications/5fd2321a-c700-4412-b393-ee56eb88ffde">Graph Developer - Associate</a></li>
                     </ul>
                 </div>
                 <div className="more-details">
