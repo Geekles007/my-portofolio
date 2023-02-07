@@ -7,13 +7,16 @@ import ExperienceItem from "./children/experience-item";
 import DribbbleWorks from "./children/dribbble-works";
 import {FaChevronRight} from "react-icons/all";
 import {currentTheme} from "../../theme/theme";
-import {size} from "../../constants";
 
 const ExperiencesUIWrapper = styled.section`
   color: ${(props) => (props.theme.textColor)};
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  a {
+    color: ${(props) => (props.theme.fourth)};
+  }
 
   h3, h2 {
     text-align: center;
@@ -89,6 +92,13 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                 <h2>As Developer</h2>
 
                 <VerticalTimeline className={"timeline-wrapper"}>
+                    <ExperienceItem period={"Fevrier 2023 - Now"} position="Frontend Developer" companyName={<>Paris, France - &nbsp;<span className={"important"}><a
+                        href="https://www.lokimo.ai" target={"_blank"}>Lokimo</a></span></>}
+                                    myTasks={
+                                        <p>
+                                            Maintain and optimize Lokimo solutions
+                                        </p>
+                                    }/>
                     <ExperienceItem period={"December 2020 - Febuary 2022"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>TSN электро</span></>}
                                     myTasks={
                                         <p>
