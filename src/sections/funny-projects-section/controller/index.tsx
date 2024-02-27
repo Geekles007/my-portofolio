@@ -2,6 +2,7 @@ import {Project} from "../children/project-item";
 import iresto from "./../../../assets/images/iresto.png";
 import camerapps from "./../../../assets/images/camerapps.png";
 import ibird from "./../../../assets/images/ibird.png";
+import ibirddesign from "./../../../assets/images/ibird-design.png";
 import zzolloo from "./../../../assets/images/zzollo.png";
 import wysiwygism from "./../../../assets/images/wysiwygism.png";
 import beingplus from "./../../../assets/images/beingplus.png";
@@ -10,10 +11,34 @@ import beingmusic from "./../../../assets/images/beingmusic.png";
 import bozoo from "./../../../assets/images/bozoo.png";
 import henspiration from "./../../../assets/images/henspiration.png";
 import lokimo from "./../../../assets/images/lokimo.png";
+import neero from "./../../../assets/images/neero.png";
 
 class FunnyProjectController {
 
     projects: Project[] = [
+        {
+            type: "Website",
+            link: "https://neero.io",
+            image: neero,
+            title: "Neero company website",
+            stacks: ["React", "Typescript", "Node.js", "Responsive design"],
+            description: <>
+                A website for <span>Neero</span>
+            </>,
+            side: "right"
+        },
+        {
+            type: "Web application",
+            link: "https://ibirdagency.vercel.app/",
+            github: "https://github.com/Geekles007/ibird",
+            image: ibirddesign,
+            title: "Ibird design website",
+            stacks: ["React", "Typescript", "Node.js", "Dribbble API", "Affinity designer"],
+            description: <>
+                A new website for <span>Ibird design agency</span>
+            </>,
+            side: "left"
+        },
         {
             type: "Web application",
             github: "https://github.com/Geekles007/irestau",

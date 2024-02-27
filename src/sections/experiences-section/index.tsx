@@ -96,7 +96,12 @@ const ExperiencesUI = ({name}: ExperiencesUIProps) => {
                         href="https://www.lokimo.ai" target={"_blank"}>Lokimo</a></span></>}
                                     myTasks={
                                         <p>
-                                            Maintain and optimize Lokimo solutions
+                                            - Analyse, Structuration,
+                                            - Implémentation de fonctionnalité du système
+                                            - Création de composants et modules réutilisables
+                                            - Maintenance du système mis sur pied
+                                            - Refonte du système
+                                            - Migration de javascript à typescript - Refonte de site web
                                         </p>
                                     }/>
                     <ExperienceItem period={"December 2020 - Febuary 2022"} position="Lead frontend developer" companyName={<>Nizhny Novgorod, Russia - &nbsp;<span className={"important"}>TSN электро</span></>}

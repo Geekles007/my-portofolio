@@ -29,7 +29,7 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                     <h4>My Stack</h4>
                     <ul>
                         <li>React</li>
-                        <li>Angular 2+</li>
+                        <li>Angular 14</li>
                         <li>Node.js</li>
                         <li>Typescript</li>
                         <li>Micro frontends</li>
@@ -38,6 +38,7 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                         <li>Docker</li>
                         <li>Affinity Designer</li>
                         <li>PostgreSQL</li>
+                        <li>Tailwind CSS</li>
                         <li>Flutter</li>
                         <li>Laravel</li>
                         <li>Next.js</li>
