@@ -57,6 +57,8 @@ const AboutMeSection = ({name}: AboutMeSectionProps) => {
                             Algorithms and Data Structures</a></li>
                         <li><a rel="noreferrer" target={"_blank"}
                                href="https://www.apollographql.com/tutorials/certifications/5fd2321a-c700-4412-b393-ee56eb88ffde">Apollo Graph Developer - Associate Certification</a></li>
+                        <li><a rel="noreferrer" target={"_blank"}
+                               href="https://animations.dev/certificate/c015f445-d180-4146-8617-9e8fbd8da936">Animations on the Web course certificate</a></li>
                     </ul>
                 </div>
                 <div className="more-details">
